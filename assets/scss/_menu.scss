@@ -1,0 +1,304 @@
+//
+// menu.scss
+//
+
+#header {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1030;
+    background-color: transparent;
+    border: 0;
+    .navbar {
+        padding: 0;
+        transition: all 0.2s ease-in-out;
+        transition-property: background-color, color;
+        > .container-fluid {
+            padding-top: 1rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            // @media only screen and (max-width: 768px) {
+            //     padding-right: 1rem;
+            //     padding-left: 1rem;
+            // }
+        }
+    }
+    .navbar-brand {
+        float: left;
+        color: $dark !important;
+        > img {
+            width: 4.5rem;
+            // @media only screen and (max-width: 768px) {
+            //     width: 3.5rem;
+            // }
+        }
+        .logoLight {
+            display: inline-block;
+        }
+        .logoDark {
+            display: none;
+        }
+    }
+
+    .navbar-toggler {
+        color: $white;
+        &:hover, &:focus, &:active, &.active, &.focus{
+            color: $black;
+        }
+    }
+
+    ul.navbar-nav#langSearch {
+        > li {
+            color: $gray !important;
+            &:hover > a,
+            &.active > a{
+                color: $gray !important;
+            }
+            > a {
+                font-family: $font-family-base;
+                font-size: 0.875rem;
+                font-weight: normal;
+                &:hover,
+                &:active {
+                    color: $secondary;
+                    font-weight: normal;
+                }
+            }
+        }
+        span {
+            color: $secondary;
+            font-size: 1rem;
+            margin-right: 0.375rem;
+            &:hover {
+                color: $secondary;
+            }
+        }
+        .dropdown {
+            .dropdown-menu {
+                padding-top: 1.5rem;
+                font-size: 1rem;
+                color: $black;
+                background-color: $light;
+                border: none;
+                border-radius: 0;
+                &.nav-search {
+                    min-width: 50vw;
+                    >div {
+                        align-items: center;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        padding: 1rem 2rem;
+                        .select2 {
+                            background: $light;
+                            border: none;
+                            border-bottom: 1.5px solid $gray;
+                            padding: 1rem;
+                            max-width: 100%;
+                            width: 100% !important;
+                            &:focus {
+                                outline: none;
+                            }
+                            // &:first-child {
+                            //     font-family: $font-family-base;
+                            //     font-size: 1.5rem;
+                            //     font-weight: 100;
+                            //     width: 80%;
+                            // }
+                            // &:last-child {
+                            //     width: 20%;
+                            //     font-size: 1.5rem;
+                            //     cursor: pointer;
+                            // }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    ul.navbar-nav#mainMenu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        > li {
+            margin: 0;
+            &:hover > a,
+            &.active > a{
+                color: $primary !important;
+            }
+            > a {
+                background-color: transparent;
+                font-family: $font-family-base;
+                font-size: 0.875rem;
+                font-weight: 600;
+                letter-spacing: 0.016rem;
+                line-height: 1.5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                text-transform: capitalize;
+                transition: all 0.5s;
+                &:hover,
+                &:active {
+                    color: $primary;
+                    border-top: 4px solid $primary;
+                }
+            }
+        }
+        .dropdown {
+            .dropdown-menu {
+                padding: 1.875rem 2.375rem;
+                font-size: 1rem;
+                color: $black;
+                background-color: $light;
+                border: none;
+                border-radius: 0;
+                min-width: 50rem;
+                &.move-0 {
+                    left: 0;
+                    margin: auto;
+                    transform: translateX(-50%);
+                }
+                &.move-50 {
+                    left: 50%;
+                    margin: auto;
+                    transform: translateX(-50%);
+                }
+                &.move-100 {
+                    left: 100%;
+                    margin: auto;
+                    transform: translateX(-50%);
+                }
+                &.move-200 {
+                    left: 200%;
+                    margin: auto;
+                    transform: translateX(-50%);
+                }
+                &.move-n120 {
+                    left: -120%;
+                    margin: auto;
+                    transform: translateX(-50%);
+                }
+                &.move-n180 {
+                    left: -180%;
+                    margin: auto;
+                    transform: translateX(-50%);
+                }
+                >.row {
+                    >div:first-child {
+                        border-right: 1px solid $black;
+                    }
+                }
+                .dropdown-image {
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                    h4 {
+                        color: $black;
+                        font-family: $font-family-base;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        line-height: 1.5rem;
+                        padding-top: 1rem;
+                    }
+                    p {
+                        color: $gray;
+                        font-family: $font-family-base;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        line-height: 1.5rem;
+                    }
+                }
+                .dropdown-submenu {
+                    .dropdown-item {
+                        color: $black;
+                        font-family: $font-family-base;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        line-height: 1.5rem;
+                        padding: 0;
+                        padding-bottom: 1.5rem;
+                        text-transform: capitalize;
+                        white-space: normal;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover, &:focus, &:active, &.active, &.focus{
+        background-color: $light;
+        color: $black;
+        a {
+            color: $black;
+        }
+        .navbar-brand {
+            .logoLight {
+                display: none;
+            }
+            .logoDark {
+                display: inline-block;
+            }
+        }
+        .ul.navbar-nav {
+            > li {
+                > a {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        .navbar {
+            > .container-fluid {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }
+        }
+        .navbar-brand {
+            > img {
+                width: 3.5rem;
+            }
+            .logoLight {
+                display: none;
+            }
+            .logoDark {
+                display: inline-block;
+            }
+        }
+        ul.navbar-nav#mainMenu {
+            > li {
+                &:hover > a,
+                &.active > a{
+                    color: $primary !important;
+                }
+                > a {
+                    &:hover,
+                    &:active {
+                        color: $primary;
+                        border-top: 4px solid $primary;
+                    }
+                }
+            }
+            .dropdown {
+                .dropdown-menu {
+                    padding: .875rem 1.375rem;
+                    font-size: .875rem;
+                    min-width: 0;
+                    .dropdown-image {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

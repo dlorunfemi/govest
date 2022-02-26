@@ -1,0 +1,31 @@
+//
+// footer.scss
+//
+
+.footer {
+    background: $gray-200;
+    box-sizing: border-box;
+    bottom: 0;
+    color: $dark;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    .container {
+        background-color: $gray-200;
+        padding-bottom: 3rem !important;
+        padding-top: 3rem !important;
+        @media (min-width: 768px) {
+            padding-bottom: 6rem !important;
+            padding-top: 6rem !important;
+        }
+    }
+    .container-fluid {
+        background-color: $primary;
+        padding-bottom: 1rem !important;
+        padding-top: 1rem !important;
+        @media (min-width: 768px) {
+            padding-bottom: 2rem !important;
+            padding-top: 2rem !important;
+        }
+    }
+}

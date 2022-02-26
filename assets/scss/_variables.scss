@@ -1,0 +1,62 @@
+//
+// variables.scss
+//
+
+// Color
+$white:                     #ffffff;
+$black:                     #161c2d;
+
+$primary:                   #2A52E2;  
+$secondary:                 #0EB51F; 
+
+$dark:                      #3c4858;
+$gray:                      #808080;
+$light:                     #f1f2f2;
+// $light:                     #f8f9fc;
+
+$muted:                     #8492a6;
+
+// Gray
+$gray-100:                  #f8f9fa;
+$gray-200:                  #e9ecef;
+$gray-300:                  #dee2e6;
+$gray-400:                  #ced4da;
+$gray-500:                  #adb5bd;
+$gray-600:                  #6c757d; 
+$gray-700:                  #495057;
+
+// Overlay
+$overlay:                   rgba($dark, 0.7);
+$gradident-overlay:         rgba($primary, 0.6);
+$bg-overlay-white:          rgba($white, 0.5);
+$home-slider-overlay:       rgba(211, 91, 30, 0.5);
+
+//Body Background
+$shadow:                    0 0 3px rgba($dark,.15);
+$shadow-md:                 0 5px 13px rgba($dark, .2);
+$shadow-lg:                 0 10px 25px rgba($dark, 0.15);
+$footer:                    lighten($secondary, 6%);
+$footer-copy:              #2A52E2;
+
+// Base font
+$font-size-base:            16px;
+
+$font-family-base:          'Karla', sans-serif;
+$font-family-secondary:     'Karla', sans-serif;
+
+//Color Picker/Switcher
+$default:                   #1e96d3;
+
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary, 
+    "dark": $dark,
+    "muted": $muted,
+    "light": $light,
+    "blue": $primary,
+    "footer": $footer,
+    "gray": $gray,
+    "footer-copy": $footer-copy,
+);
+
+$imgPath :"/assets/img";

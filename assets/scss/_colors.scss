@@ -1,0 +1,40 @@
+$white: #ffffff !default;
+$white_light: #f1f2f2 !default;
+$blue_light: #1e96d3 !default;
+$blue_foot: #164886 !default;
+$blue_dark: #205fad !default;
+$gray: #808080 !default;
+$black_600: rgba(0,0,0,0.6) !default;
+$black: #000000 !default;
+
+.bg_white {
+    background-color: $white !important;
+}
+
+.bg_white_light {
+    background-color: $white_light !important;
+}
+
+.bg_blue_light {
+    background-color: $blue_light !important;
+}
+
+.bg_blue_dark {
+    background-color: $blue_dark !important;
+}
+
+.bg_blue_foot {
+    background-color: $blue_foot !important;
+}
+
+.bg_gray {
+    background-color: $gray !important;
+}
+
+.bg_black_600 {
+    background-color: $black_600 !important;
+}
+
+.bg_black {
+    background-color: $black !important;
+}
